@@ -16,8 +16,9 @@
 #include <string>
 #include <sstream>
 
-#include "example_interfaces/action/fibonacci.hpp"
+#include "action_tutorials_interfaces/action/fibonacci.hpp"
 #include "rclcpp/rclcpp.hpp"
+// TODO(jacobperron): Remove this once it is included as part of 'rclcpp.hpp'
 #include "rclcpp_action/rclcpp_action.hpp"
 #include "rclcpp_components/register_node_macro.hpp"
 
@@ -28,7 +29,7 @@ namespace action_tutorials_cpp
 class FibonacciActionClient : public rclcpp::Node
 {
 public:
-  using Fibonacci = example_interfaces::action::Fibonacci;
+  using Fibonacci = action_tutorials_interfaces::action::Fibonacci;
   using GoalHandleFibonacci = rclcpp_action::ClientGoalHandle<Fibonacci>;
 
   ACTION_TUTORIALS_CPP_PUBLIC
@@ -82,7 +83,7 @@ public:
       {
         std::stringstream ss;
         ss << "Next number in sequence received: ";
-        for (auto number : feedback->sequence) {
+        for (auto number : feedback->partial_sequence) {
           ss << number << " ";
         }
         RCLCPP_INFO(this->get_logger(), "%s", ss.str().c_str());

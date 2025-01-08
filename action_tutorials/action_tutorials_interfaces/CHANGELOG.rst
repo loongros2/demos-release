@@ -1,6 +1,6 @@
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package demo_nodes_cpp_native
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package action_tutorials_interfaces
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.33.5 (2024-09-06)
 -------------------
@@ -56,8 +56,8 @@ Changelog for package demo_nodes_cpp_native
 
 0.26.0 (2023-04-11)
 -------------------
-* Added README.md for demo_cpp_nodes_native (`#597 <https://github.com/ros2/demos/issues/597>`_)
-* Contributors: Gary Bey
+* A couple more upgrades to C++17. (`#609 <https://github.com/ros2/demos/issues/609>`_)
+* Contributors: Chris Lalancette
 
 0.25.0 (2023-03-01)
 -------------------
@@ -67,16 +67,17 @@ Changelog for package demo_nodes_cpp_native
 
 0.24.0 (2023-02-14)
 -------------------
-* Update the demos to C++17. (`#594 <https://github.com/ros2/demos/issues/594>`_)
+* Add README's for action_tutorials. (`#576 <https://github.com/ros2/demos/issues/576>`_)
 * [rolling] Update maintainers - 2022-11-07 (`#589 <https://github.com/ros2/demos/issues/589>`_)
-* Make demo_nodes_cpp_native install stuff only when it builds (`#590 <https://github.com/ros2/demos/issues/590>`_)
-* Contributors: Audrow Nash, Chris Lalancette, Shane Loretz
+* Contributors: Audrow Nash, kagibson
 
 0.23.0 (2022-11-02)
 -------------------
 
 0.22.0 (2022-09-13)
 -------------------
+* Remove action_msgs dependency (`#580 <https://github.com/ros2/demos/issues/580>`_)
+* Contributors: Jacob Perron
 
 0.21.0 (2022-04-29)
 -------------------
@@ -93,8 +94,7 @@ Changelog for package demo_nodes_cpp_native
 0.18.0 (2021-12-17)
 -------------------
 * Update maintainers to Audrow Nash and Michael Jeronimo (`#543 <https://github.com/ros2/demos/issues/543>`_)
-* Fix typo in demo_nodes_cpp_native package description (`#536 <https://github.com/ros2/demos/issues/536>`_)
-* Contributors: Audrow Nash, Víctor Mayoral Vilches
+* Contributors: Audrow Nash
 
 0.17.0 (2021-10-18)
 -------------------
@@ -113,8 +113,6 @@ Changelog for package demo_nodes_cpp_native
 
 0.14.0 (2021-04-06)
 -------------------
-* Update demo_nodes_cpp_native to new Fast DDS API (`#493 <https://github.com/ros2/demos/issues/493>`_)
-* Contributors: Miguel Company
 
 0.13.0 (2021-03-25)
 -------------------
@@ -138,8 +136,6 @@ Changelog for package demo_nodes_cpp_native
 
 0.9.3 (2020-06-01)
 ------------------
-* Shared publisher handle (`#448 <https://github.com/ros2/demos/issues/448>`_)
-* Contributors: Chris Lalancette
 
 0.9.2 (2020-05-26)
 ------------------
@@ -161,14 +157,10 @@ Changelog for package demo_nodes_cpp_native
 
 0.8.1 (2019-10-23)
 ------------------
-* Replace ready_fn with ReadyToTest action (`#404 <https://github.com/ros2/demos/issues/404>`_)
-* Contributors: Peter Baughman
 
 0.8.0 (2019-09-26)
 ------------------
-* Adding visibility macros to demos (`#381 <https://github.com/ros2/demos/issues/381>`_)
-* Check if FastRTPS available in demo_nodes_cpp_native before creating library/executable (`#383 <https://github.com/ros2/demos/issues/383>`_)
-* Demos using composition (`#375 <https://github.com/ros2/demos/issues/375>`_)
+* Move action tutorial interface to a new package, action_tutorials_interfaces (`#378 <https://github.com/ros2/demos/issues/378>`_)
 * Contributors: Siddharth Kucheria
 
 0.7.6 (2019-05-30)
@@ -185,34 +177,27 @@ Changelog for package demo_nodes_cpp_native
 
 0.7.2 (2019-05-08)
 ------------------
-* changes to avoid deprecated API's (`#332 <https://github.com/ros2/demos/issues/332>`_)
-* Corrected publish calls with shared_ptr signature (`#327 <https://github.com/ros2/demos/issues/327>`_)
-* Migrate launch tests to new launch_testing features & API (`#318 <https://github.com/ros2/demos/issues/318>`_)
-* Contributors: Michel Hidalgo, William Woodall, ivanpauno
 
 0.7.1 (2019-04-26)
 ------------------
 
 0.7.0 (2019-04-14)
 ------------------
-* Added launch along with launch_testing as test dependencies. (`#313 <https://github.com/ros2/demos/issues/313>`_)
-* Contributors: Michel Hidalgo
 
 0.6.2 (2019-01-15)
 ------------------
 
-0.6.1 (2018-12-13)
+0.6.1 (2018-12-12)
 ------------------
 
 0.6.0 (2018-12-07)
 ------------------
-* Added semicolons to all RCLCPP and RCUTILS macros. (`#278 <https://github.com/ros2/demos/issues/278>`_)
-* Contributors: Chris Lalancette
 
 0.5.1 (2018-06-28)
 ------------------
 
 0.5.0 (2018-06-27)
 ------------------
-* Updated launch files to account for the "old launch" getting renamespaced as ``launch`` -> ``launch.legacy``. (`#239 <https://github.com/ros2/demos/issues/239>`_)
-* Contributors: Dirk Thomas, William Woodall
+
+0.4.0 (2017-12-08)
+------------------
